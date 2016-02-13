@@ -1,0 +1,14 @@
+﻿{% load static %}<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>{% block page_title %}ci-ng{% endblock %}</title>
+        <link href="{% static 'bootstrap/dist/css/bootstrap.min.css' %}" rel="stylesheet">
+        <link href="{% static 'chrysalis/css.css' %}" rel="stylesheet">
+    </head>
+    <body>
+        <div class="container-fluid">
+            {% block page_content %}{% endblock %}
+        </div>
+    </body>
+</html>

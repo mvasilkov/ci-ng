@@ -1,0 +1,20 @@
+{
+  "name": "ci-ng",
+  "version": "1.0.0",
+  "description": "",
+  "main": "manage.py",
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/mvasilkov/ci-ng.git"
+  },
+  "author": "Mark Vasilkov <mvasilkov@gmail.com> (http://mvasilkov.ovh)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mvasilkov/ci-ng/issues"
+  },
+  "homepage": "https://github.com/mvasilkov/ci-ng#readme",
+  "dependencies": {
+    "bootstrap": "^4.0.0-alpha.2",
+    "jquery": "^2.2.0"
+  }
+}

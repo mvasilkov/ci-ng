@@ -21,6 +21,10 @@ build/
 bld/
 [Bb]in/
 [Oo]bj/
+__pycache__/
+
+# Python virtual environment
+virtual/
 
 # Visual Studio 2015 cache/options directory
 .vs/

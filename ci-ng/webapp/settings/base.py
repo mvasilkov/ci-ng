@@ -1,6 +1,6 @@
 import os.path as op
 
-PATH = op.dirname(op.dirname(op.abspath(__file__)))
+PATH = op.dirname(op.dirname(op.dirname(op.abspath(__file__))))
 
 
 # Application definition
@@ -12,6 +12,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'chrysalis',
 ]
 
 MIDDLEWARE_CLASSES = [
@@ -69,3 +70,11 @@ USE_I18N = USE_L10N = USE_TZ = False
 # https://docs.djangoproject.com/en/1.9/howto/static-files/
 
 STATIC_URL = '/static/'
+
+STATICFILES_FINDERS = [
+    'django.contrib.staticfiles.finders.FileSystemFinder',
+    'django.contrib.staticfiles.finders.AppDirectoriesFinder',
+    'npm.finders.NpmFinder',
+]
+
+NPM_PREFIX_PATH = PATH
