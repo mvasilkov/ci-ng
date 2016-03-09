@@ -15,6 +15,8 @@ INSTALLED_APPS = [
     'chrysalis',
 ]
 
+INTERNAL_IPS = ['127.0.0.1', '::1']
+
 MIDDLEWARE_CLASSES = [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
